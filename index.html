@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <script type="module">
+      const contentRoot = new URLSearchParams(window.location.search).get('contentroot') || '/federal/home';
+      const env = new URLSearchParams(window.location.search).get('env') || 'qa';
+      import loadfooter from 'https://feds--milo--adobecom.hlx.page/libs/navigation/footer.js';
+      loadfooter({ contentRoot, env });
+    </script>
+    <style>
+      main { padding: 60px}
+    </style>
+  </head>
+  <body>
+    <header class="global-navigation"></header>
+    <main>
+      <section>Project content</section>
+    </main>
+  </body>
+</html>
